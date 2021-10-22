@@ -15,7 +15,7 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    background: var(--purple) url("./images/bg-desktop.svg") no-repeat;
+    background: var(--purple) url("../images/bg-desktop.svg") no-repeat;
     padding: 50px 60px;
 }
 
@@ -106,7 +106,6 @@ footer {
     border-color: var(--pink);
     cursor: pointer;
 }
-
 
 @media screen and (max-width: 1000px) {
     main {
