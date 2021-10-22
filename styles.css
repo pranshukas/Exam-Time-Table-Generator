@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+/* global syles */
+
+:root {
+    --purple: #674baf;
+    --pink: #e882e8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: var(--purple) url("./images/bg-desktop.svg") no-repeat;
+    padding: 50px 60px;
+}
+
+/* Header  */
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header img {
+    width: 40px;
+    height: 40px;
+}
+
+.header h3 {
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* main styles */
+main {
+    display: flex;
+    padding-top: 85px;
+    justify-content: space-between;
+}
+
+main .left {
+    padding-right: 2.5em;
+}
+
+main .right {
+    color: #fff;
+}
+
+main .right h1 {
+    font-size: 2.5em;
+    font-family: "Poppins";
+    padding-bottom: 20px;
+}
+
+main .right p {
+    line-height: 1.7;
+    opacity: 0.8;
+}
+
+button {
+    padding: 15px 60px;
+    margin-top: 30px;
+    border-radius: 5rem;
+    border: 0;
+    cursor: pointer;
+    color: var(--purple);
+    font-size: 1em;
+    font-weight: 600;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+    color: #fff;
+    background: var(--pink);
+    transform: scale(0.98);
+}
+
+/* footer */
+
+footer {
+    text-align: right;
+}
+
+.icon {
+    border: 2px solid #fff;
+    padding: 10px 10px;
+    border-radius: 50%;
+    margin-left: 20px;
+    color: #fff;
+}
+
+.fa-facebook-f {
+    padding: 10px 13px;
+}
+
+.icon:hover {
+    color: var(--pink);
+    border-color: var(--pink);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1000px) {
+    main {
+        flex-direction: column;
+    }
+
+    main .left img {
+        width: 100%;
+    }
+
+    main .right {
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    main .right h1 {
+        font-size: 1.8em;
+    }
+
+    button {
+        padding: 15px 90px;
+    }
+
+    footer {
+        text-align: center;
+        padding-top: 80px;
+    }
+}
