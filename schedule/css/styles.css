@@ -23,7 +23,7 @@ body {
     width: 50%;
     margin: 30px auto;
     text-align: center;
-    padding: 50px;  
+    padding: 50px;
     border: 1px solid rgb(204, 204, 204);
     border-radius: 10px;
 }
@@ -31,7 +31,7 @@ body {
 .create-semesters {
     display: none;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     flex-wrap: wrap;
 }
 
@@ -53,31 +53,53 @@ body {
     width: 30px;
     border-radius: 50%;
     border-color: transparent;
-    background-color: #A683E3;
+    background-color: #a683e3;
     color: #fff;
     font-size: 25px;
     padding-bottom: auto;
     border-width: 0;
     margin-right: 10px;
     cursor: pointer;
-  }
+}
 
-  .card {
-      margin: 10px 5px;
-  }
+.card {
+    margin: 10px 5px;
+}
 
-  .card input {
-      border: 1px solid #000;
-      border-radius: 10px;
-      padding: 4px 10px;
-      font-size: 1rem;
-      font-weight: 200;
-      margin-bottom: 10px;
-  }
+.card input {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 4px 10px;
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
 
-  .card input:focus {
-      outline: 0;
-  }
+.card input:focus {
+    outline: 0;
+}
 
+#generate-btn {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #a683e3;
+    border-radius: 10px;
+    margin: 30px;
+    z-index: 100;
+    cursor: pointer;
+    display: none;
+}
+#generate-btn:hover {
+    transform: scale(0.98);
+}
 
-  
+#generate-btn:focus {
+    outline: 0;
+}
+
+.schedule {
+    display: none;
+}
